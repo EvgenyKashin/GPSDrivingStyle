@@ -3,11 +3,13 @@
 This repo contains the python project for parsing and analyzing GPS tracks in NMEA protocol. It also include a small dataset (18 rows) data.csv (processed features and labels) which I collected in two weeks driving my car. I labeled the data - agressive/no agressive style of driving. It may be used for predicting labels. Feel free to use it.
 
 ## Usage
-Install the Python requirements with pip install -r requirements.txt. For comfort you can import script to Jupyter Notebook:
+Install the Python requirements with pip install -r requirements.txt. For comfort you can import script to Jupyter Notebook. For example:
 ```python
 from gps_parser import *
 %matplotlib inline
+scatter_csv()
 ```
+![scatter plot](/imgs/scatter.png)
 
 ### Data preparation
 For collecting the data you may use your navigator or smartphone (my choose). If you use a smartphone application, check a GPS protocol of output - it should be NMEA.
@@ -25,7 +27,7 @@ From terminal you can type:
 ```
 python gps_parser.py id
 ```
-where id is your integer id of the folder with data. This command will make process_data(id) and add_to_csv(id)
+where id is your integer id of the folder with data. This command will make process_data(id) and add_to_csv(id).
 
 ## TODO
-To collect more data and build a predicting model
+To collect more data and build a predicting model.
