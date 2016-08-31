@@ -14,13 +14,13 @@ scatter_csv()
 ### Data preparation
 For collecting the data you may use your navigator or smartphone (my choose). If you use a smartphone application, check a GPS protocol of output - it should be NMEA.
 
-Every single track should be placed in a separate folder called an integer number. For example '1' or '23' – name of the folder. It will be id of the track. Call the track 'data.txt' inside the folder. You should also create a description of the track in the same folder and call it 'desk.txt' - it may be useful when you will start analysis. The first word should be label, 'aggr' - aggressive style of driving, 'no' - no aggressive.
+Every single track should be placed in a separate folder called an integer number. For example '1' or '23' – name of the folder. It will be id of the track. Name the track 'data.txt' inside the folder. You should also create a description of the track in the same folder and call it 'desk.txt' - it may be useful when you will start analysis. The first word should be label, 'aggr' - aggressive style of driving, 'no' - no aggressive.
 
 ### Generating features
 In the script gps_parser.py there are several primary function:
 * process_data(id) - display features of the given track in a terminal or if you use Jupyter Notebook it also plot graphics
 * add_to_csv(id) - add the row with features of the given track to the 'data.csv' file
-* add_to_csv_range(range(10)) - try to add first 10 tracks to 'data.csv'
+* add_to_csv_range(range(10)) - will try to add first 10 tracks to 'data.csv'
 * pairplot_csv() and scatter_csv() - draw graphics using the data from 'data.csv'
 
 From terminal you can type:
@@ -30,4 +30,4 @@ python gps_parser.py id
 where id is your integer id of the folder with data. This command will make process_data(id) and add_to_csv(id).
 
 ## TODO
-To collect more data and build a predicting model.
+Collect more data and build a predicting model.
