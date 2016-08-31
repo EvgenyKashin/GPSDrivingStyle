@@ -1,6 +1,6 @@
 # GPSDrivingStyle
 
-This repo contains the python project for parsing and analyzing GPS tracks in NMEA protocol. It also include a small dataset (18 rows) data.csv (processed features and labels) which I collected in two weeks driving my car. I labeled the data - agressive/no agressive style of driving. It may be used for predicting labels. Feel free to use it.
+This repo contains the Python project for parsing and analyzing GPS tracks in NMEA protocol. It also include a small dataset (18 rows) data.csv (processed features and labels) which I collected in two weeks driving my car. I labeled the data - agressive/no agressive style of driving. It may be used for predicting labels. Feel free to use it.
 
 ## Usage
 Install the Python requirements with pip install -r requirements.txt. For comfort you can import script to Jupyter Notebook. For example:
